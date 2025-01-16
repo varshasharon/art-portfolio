@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(255, 255, 245);
+    font-family: "Poppins", serif;
+    align-items: center;
+    justify-content: center;
+
+}
+nav{
+    display: flex;
+    padding: 5px 25px;
+    border-radius: 15px;
+    width: 100%;
+    align-items: center;
+    background-color: rgb(255, 247, 228);
+    border: 1px solid;
+    z-index: 9999;
+}
+nav h3{
+    font-weight: 200;
+    padding: 0 10px;
+    text-align: center;
+    transition: 0.5s all ease;
+    cursor: pointer;
+
+
+}
+.socials{
+    display: flex;
+    position: absolute;
+    padding: 0 20px;
+    right: 0;
+}
+.socials img{
+    height: 45px;
+    margin-right: 20px;
+    transition: 0.5s all ease;
+    border-radius: 50%;
+
+}
+.socials img:hover{
+    cursor: pointer;
+    
+}
+.socials button{
+    padding: 0px 15px;
+    border-radius: 25px;
+    border: 1px solid;
+    background: linear-gradient(175deg, #f99fab, #fcd164);
+    transition: 0.5s all ease;
+
+}
+.socials button:hover{
+    box-shadow: 2px 2px 12px #949494c0;
+    transition: 0.5s all ease;
+}
+.socials button a{
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+    font-family: "Poppins", serif;
+    font-size: 14px;
+}
+.logo-img img{
+    height: 70px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+.logo h1{
+    position: absolute;
+    top: 18%;
+    font-weight: 600;
+    font-size: 95px;
+    background: -webkit-linear-gradient(16deg, #ffe14b, #ff465f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+section {
+    margin: 20px;
+    margin-top: 250px;
+}
+
+.paintings {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+    grid-auto-rows: 250px;
+    background-repeat: none;
+}
+
+.card {
+    background-size: cover; /* Ensures the entire image fits within the div */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    border: 1px solid #606060;
+
+    
+}
+.card:hover{
+    box-shadow: 2px 2px 12px #949494c0;
+    transition: 0.3s all ease;
+}
+.card-tall{
+    grid-row:1/3;
+}
+.card-tall video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the card area */
+    border-radius: inherit; /* Matches the border-radius of the card, if any */
+    
+}
+@media (max-width:768px) {
+    .logo h1{
+        font-size: 65px;
+    }
+}
